@@ -24,20 +24,15 @@
 
 <body class="bg-base-100 font-sans text-base-content antialiased relative">
 
-<!-- HEADER / NAVBAR -->
-<!-- O container externo centraliza a barra na tela -->
-<!-- HEADER / NAVBAR -->
 <header class="fixed top-4 left-0 right-0 z-50 flex justify-center w-full px-4">
   <div class="container max-w-7xl navbar bg-base-100/95 backdrop-blur-md shadow-2xl rounded-2xl border border-base-200 justify-between items-center py-2 px-6 h-20">
 
-    <!-- Lado Esquerdo: Logo -->
     <div class="navbar-start w-auto">
       <a href="#inicio" class="flex items-center hover:opacity-80 transition-opacity">
         <img src="./img/logo.png" alt="Logo Casa Construir" class="h-16 w-auto object-contain">
       </a>
     </div>
 
-    <!-- Lado Direito: Links de Navegação -->
     <div class="navbar-end w-auto">
       <ul class="menu menu-horizontal px-1 font-medium text-base lg:flex">
         <li><a href="#inicio" class="hover:text-orange-600">Início</a></li>
@@ -60,7 +55,6 @@
 </header>
 
 
-<!-- BOTÃO FLUTUANTE DO WHATSAPP -->
 <a href="https://wa.me/552126972355?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20loja."
    target="_blank"
    class="fixed bottom-6 right-6 z-50 btn btn-circle btn-lg bg-green-500 hover:bg-green-600 border-none shadow-xl text-white hover:-translate-y-1 transition-transform duration-300"
@@ -68,27 +62,25 @@
   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
 </a>
 
-<!-- MAIN CONTENT -->
 <main>
-  <!-- HERO SECTION -->
-  <!-- Background Full Width, Conteúdo dentro do Container -->
-  <div id="inicio" class="hero min-h-screen w-full relative" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop');">
-    <div class="hero-overlay bg-opacity-70 bg-gray-900 absolute inset-0"></div>
+  <div id="inicio" class="hero min-h-screen w-full relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat blur-[2px] brightness-50 transform scale-105" style="background-image: url('./img/fundo.png');"></div>
+
+    <div class="hero-overlay bg-black/40 absolute inset-0 z-0"></div>
 
     <div class="container max-w-7xl mx-auto px-4 flex justify-center items-center h-full relative z-10 pt-24">
       <div class="text-center text-neutral-content max-w-3xl">
-        <h1 class="mb-5 text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight">Construindo sonhos com base sólida</h1>
-        <p class="mb-8 text-lg text-gray-200 font-medium">
+        <h1 class="mb-5 text-5xl md:text-6xl font-bold text-white tracking-tight leading-tight drop-shadow-lg">Construindo sonhos com base sólida</h1>
+        <p class="mb-8 text-lg text-gray-200 font-medium drop-shadow-md">
           Do cimento ao acabamento fino. Encontre tudo o que sua obra precisa na Casa Construir.
         </p>
         <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <a href="#produtos" class="btn btn-lg btn-primary bg-orange-600 border-none text-white hover:bg-orange-700 px-8">Departamentos</a>
+          <a href="#produtos" class="btn btn-lg btn-primary bg-orange-600 border-none text-white hover:bg-orange-700 px-8 shadow-lg">Departamentos</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SEÇÃO DE DEPARTAMENTOS -->
   <section id="produtos" class="py-24 bg-base-200 w-full">
     <div class="container max-w-7xl mx-auto px-4">
       <div class="text-center mb-16">
@@ -97,7 +89,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Cards mantidos -->
         <div class="card bg-base-100 shadow-xl hover:-translate-y-2 transition-transform duration-300">
           <figure><img src="./img/materiais.png" alt="Material Bruto" class="h-56 w-full object-cover" /></figure>
           <div class="card-body">
@@ -125,8 +116,6 @@
     </div>
   </section>
 
-  <!-- SEÇÃO CONTATO -->
-  <!-- SEÇÃO CONTATO -->
   <section id="contato" class="py-24 bg-white text-base-content w-full">
     <div class="container max-w-7xl mx-auto px-4">
       <div class="text-center mb-12">
@@ -135,7 +124,6 @@
       </div>
 
       <div class="flex flex-col lg:flex-row gap-8 shadow-2xl rounded-2xl overflow-hidden bg-base-100 border border-base-200">
-        <!-- Informações (Esquerda) -->
         <div class="w-max p-10 flex flex-col justify-center bg-gray-50">
           <h3 class="text-2xl font-bold mb-8 text-orange-600">Canais de Atendimento</h3>
           <div>
@@ -171,7 +159,6 @@
             </div>
           </div>
         </div>
-        <!-- Mapa Atualizado -->
         <div class="lg:w-2/3 min-h-[400px] relative bg-gray-200">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.606282869503!2d-43.43572892374661!3d-22.77885473602167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99677e4b9f074d%3A0xe534127027b40960!2sAv.%20Pref.%20Jos%C3%A9%20Montes%20Paix%C3%A3o%2C%201799%20-%20Centro%2C%20Mesquita%20-%20RJ%2C%2026553-160!5e0!3m2!1spt-BR!2sbr!4v1709920000000!5m2!1spt-BR!2sbr"
@@ -187,8 +174,6 @@
   </section>
 </main>
 
-<!-- FOOTER -->
-<!-- Background Full Width, Conteúdo no Container -->
 <footer class="bg-neutral text-neutral-content w-full">
   <div class="container max-w-7xl mx-auto footer p-10 grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center md:justify-items-start">
 
